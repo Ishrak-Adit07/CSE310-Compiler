@@ -39,7 +39,7 @@ class SymbolTable{
 
     //Destructor
     ~SymbolTable(){
-        delete root;
+        if(root != null) delete root;
     }
 
     //Entering a new scope
